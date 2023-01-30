@@ -17,7 +17,7 @@ env = Environment(loader=FileSystemLoader("templates/"))
 
 template = env.get_template("index.html")
 
-with open('out.html', 'w') as f:
+with open('index.html', 'w') as f:
     f.write(template.render(
         heading="Some List",
         page_title="Awesome Title",
