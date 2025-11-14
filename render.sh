@@ -1,11 +1,11 @@
-#!/usr/bin/python3.8
+#!/usr/bin/env python
 
 import csv
 from liquid import Environment
 from liquid import FileSystemLoader
 
 # load members
-members_file = csv.DictReader(open("../members.csv"))
+members_file = csv.DictReader(open("members.csv"))
 
 members = []
 for row in members_file:
